@@ -4,6 +4,7 @@ package ua.university.database.dao.mySql;
 
 import ua.university.database.dao.FacultyDao;
 import ua.university.database.entities.Faculty;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -62,6 +63,7 @@ public class MySqlFacultyDao implements FacultyDao {
         f.setSubject1(rs.getString("subject1"));
         f.setSubject2(rs.getString("subject2"));
         f.setSubject3(rs.getString("subject3"));
+
         return f;
     }
 }
